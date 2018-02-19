@@ -2,7 +2,7 @@
     <img src="https://framework.iumio.com/iumio-black.png">
 </a></p>
 
-iumio RT
+iumio Mercure
 ================
 
 @ The language designed for the Routing
@@ -15,7 +15,9 @@ iumio RT
 Description
 ------------
 
-[iumio RT][1] is a **language** dedicated for the routing system in all web applications. 
+
+
+[iumio Mercure][1] is a **language** dedicated for the routing system in all web applications. 
 
 Installation
 ------------
@@ -31,16 +33,16 @@ Documentation
 Contributing
 ------------
 
-iumio RT is an Open Source with MIT Licence.
+iumio Mercure is an Open Source with MIT Licence.
 We need any help to continue the language development and create a new community.
 
 
 About Us
 --------
 
-iumio RT is an [iumio Component][5], created by [RAFINA Dany][6] and co-founded by [HURON Kevin][7]
+iumio Mercure is an [iumio component][5], created by [RAFINA Dany][6] and co-founded by [HURON Kevin][7]
 
-[1]: https://rt.iumio.com
-[5]: https://components.iumio.com
+[1]: https://mercure.iumio.com
+[5]: https://iumio.com
 [6]: https://www.linkedin.com/in/dany-rafina-672041b3/
 [7]: http://kevinhuron.fr/
