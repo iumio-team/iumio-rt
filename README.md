@@ -1,5 +1,5 @@
 <p align="center"><a href="https://framework.iumio.com" target="_blank">
-    <img src="https://framework.iumio.com/images/iumio.logo.black.mercure.png">
+    <img src="https://mercure.iumio.com/images/iumio.logo.black.mercure.png">
 </a></p>
 
 iumio Mercure
