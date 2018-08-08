@@ -7,8 +7,8 @@ iumio Mercure
 
 @ The language designed for the Routing
 
-<p align="center"><a href="https://framework.iumio.com" target="_blank">
-    <img src="https://travis-ci.org/iumio-team/iumio-framework.svg?branch=master">
+<p align="center"><a href="https://mercure.iumio.com" target="_blank">
+    <img src="https://travis-ci.org/iumio/mercure.svg?branch=master">
 </a></p>
 
 
@@ -40,9 +40,8 @@ We need any help to continue the language development and create a new community
 About Us
 --------
 
-iumio Mercure is an [iumio component][5], created by [RAFINA Dany][6] and co-founded by [HURON Kevin][7]
+iumio Mercure is an [iumio component][5], created by [RAFINA Dany][6]
 
 [1]: https://mercure.iumio.com
 [5]: https://iumio.com
 [6]: https://www.linkedin.com/in/dany-rafina-672041b3/
-[7]: http://kevinhuron.fr/
