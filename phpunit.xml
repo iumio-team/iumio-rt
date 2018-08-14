@@ -6,14 +6,14 @@
          backupGlobals="false"
          colors="true"
          bootstrap="vendor/autoload.php"
-         processIsolation="true">
+        >
     <php>
         <ini name="error_reporting" value="-1" />
         <server name="KERNEL_CLASS" value="AppKernel" />
     </php>
 
     <testsuites>
-        <testsuite name="iumio Mercure Core Test Suite">
+        <testsuite name="Mercure Core Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

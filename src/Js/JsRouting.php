@@ -15,7 +15,7 @@
 namespace Mercure\Core\Routing\Js;
 
 use iumioFramework\Core\Routing\Listener\Listener;
-use iumioFramework\Core\Base\Json\JsonListener as JL;
+use iumioFramework\Core\Base\Json\JsonReader as JL;
 use iumioFramework\Core\Requirement\Environment\FEnv;
 use iumioFramework\Core\Exception\Server500;
 use iumioFramework\Core\Routing\Routing;

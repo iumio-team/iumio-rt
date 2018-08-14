@@ -18,6 +18,7 @@ use iumioFramework\Core\Base\Container\FrameworkContainer;
 use iumioFramework\Core\Requirement\Environment\FEnv;
 use iumioFramework\Core\Exception\Server500;
 use iumioFramework\Core\Requirement\FrameworkCore;
+use Mercure\Parser\AbstractParser;
 
 /**
  * Class MercureListener
@@ -28,47 +29,13 @@ use iumioFramework\Core\Requirement\FrameworkCore;
  * @author   RAFINA Dany <dany.rafina@iumio.com>
  */
 
-class MercureListener implements Listener
+class MercureParser extends AbstractParser implements Listener
 {
     protected $routers;
     protected $appName;
     protected $router = array();
     protected $partNameApp;
     private $prefix;
-
-    /**
-     * @var array $methodsReq Methods allowed for HTTP Communications
-     */
-    private $methodsReq = array("GET", "PUT", "DELETE", "POST",
-        "PATH", "ALL", "OPTIONS", "TRACE", "HEAD", "CONNECT");
-    /**
-     * @var array $keywords Keywords allowed in Mercure
-     * name : route name
-     * path : route path
-     * activity : The method (Activity) called by the route
-     * m_allow : The HTTP method(s) allowed
-     * route : The start keyword for a route
-     * endroute : The end keyword for a route
-     * visibility : The route visibility (private for PHP only, public for PHP and Javascript Routing (JSRouting) and
-     * disabled to disable a route)
-     *
-     * parameters : Adding routing parameters (for example parameters: {hi: string, men:int}
-     * api_auth: enable API authentification for only this route
-     * (required a api key then an Exception will be generated)
-     *
-     */
-    private $keywords = array("name", "path", "activity", "m_allow", "route:", "endroute",
-        "visibility", "parameters", "api_auth");
-
-    /**
-     * @var array $scalar The scalar type for parameters
-     */
-    protected $scalar = array("string", "bool", "int", "float", "object");
-
-    /**
-     * @var array $visibilities Routes visibilities
-     */
-    protected $visibilities = array("public", "private", "disabled");
 
     /**
      * MercureListener constructor.
@@ -79,6 +46,12 @@ class MercureListener implements Listener
     {
         $this->appName = $appName;
         $this->prefix = $prefix;
+    }
+
+
+
+    public function read() {
+
     }
 
     /** Open a file

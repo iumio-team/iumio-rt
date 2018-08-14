@@ -16,7 +16,7 @@ namespace Mercure\Core\Routing;
 
 use iumioFramework\Core\Base\Http\HttpListener;
 use iumioFramework\Core\Base\Http\ServerRequest;
-use iumioFramework\Core\Base\Json\JsonListener;
+use iumioFramework\Core\Base\Json\JsonReader;
 use iumioFramework\Core\Base\Locale\AppLocale;
 use iumioFramework\Core\Base\Locale\Locale;
 use iumioFramework\Core\Base\Server\GlobalServer;
@@ -453,14 +453,14 @@ class Routing extends MercureListener
         bool $component = false
     ) :string {
         $app = (($app_called != null)? $app_called : FEnv::get("app.call"));
-        $file = JsonListener::open(FEnv::get("framework.config.core.apps.file"));
+        $file = JsonReader::open(FEnv::get("framework.config.core.apps.file"));
         $prefix = null;
         foreach ($file as $one) {
             if ($one->name == $app && $one->prefix != "") {
                 $prefix = $one->prefix;
             }
         }
-        JsonListener::close(FEnv::get("framework.config.core.apps.file"));
+        JsonReader::close(FEnv::get("framework.config.core.apps.file"));
         $iscomponent = FrameworkTools::detectAppType($app);
         $component = false;
         if ($iscomponent == 'base') {
